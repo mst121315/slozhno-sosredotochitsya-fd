@@ -9,8 +9,69 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #353430;
+  --color-h1: #FFC2E6;
+  --color-h1-decorated-zone: #FF8DCB;
+  --accent-color-opasity: #353430, 0.4;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
+  background-image: url(../images/cover-image-light.png);
+  background-color: transparent;
+}
+
+.theme-light .pseudo_decorate_header::before {
+  display: none;
+}
+
+.theme-light .pseudo_decorate_header::after {
+  display: none;
+}
+
+.theme-light .title_header {
+  color: var(--color-h1);
+  text-shadow: 4px 4px 0 var(--color-h1-decorated-zone);
+}
+
+.theme-light .title-decor {
+  background-color: var(--color-h1-decorated-zone);
+  color: var(--accent-color);
+}
+
+.theme-light .main-text {
+  color: var(--accent-color);
+}
+
+.theme-light a {
+  color: var(--accent-color);
+  text-shadow: 2px 2px 0 var(--color-h1);
+}
+
+
+.theme-light a:focus-visible {
+  outline: solid 1px var(--accent-color);
+}
+
+
+.theme-light .header__theme-menu-button:focus-visible {
+  border-color: var(--accent-color);
+}
+
+.theme-light .header__theme-menu-button:hover {
+  outline: solid 1px var(--accent-color-opasity);
+}
+
+.theme-light .footer-text {
+  color: var(--color-h1);
+  text-shadow: 3px 3px 0 var(--color-h1-decorated-zone);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+  --accent-color: #353430;
+  --color-h1: #FFC2E6;
+  --color-h1-decorated-zone: #FF8DCB;
+  --accent-color-opasity: #353430, 0.4;
+  }
 }
