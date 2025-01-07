@@ -26,7 +26,7 @@
   display: grid;
   grid-template-rows: min-content repeat(3, 1fr);
   row-gap: 13px;
-  min-block-size: 100vh;
+  block-size: 100vh;
 }
 
 @media (width >= 780px) {
@@ -458,7 +458,7 @@ a:focus-visible {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   margin-block-start: 50px;
-  min-block-size: 100vh;
+  block-size: 100vh;
 }
 
 @media (width >= 780px) {
