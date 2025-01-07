@@ -9,15 +9,16 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --accent-color: #353430;
+  --accent-color: #FF8DCB;
   --color-h1: #FFC2E6;
-  --color-h1-decorated-zone: #FF8DCB;
+  --color-text: #353430;
   --accent-color-opasity: #353430, 0.4;
+  --background-image: url(../images/cover-image-light.png);
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-  background-image: url(../images/cover-image-light.png);
+  background-image: var(--background-image);
   background-color: transparent;
 }
 
@@ -31,12 +32,12 @@
 
 .theme-light .title_header {
   color: var(--color-h1);
-  text-shadow: 4px 4px 0 var(--color-h1-decorated-zone);
+  text-shadow: 4px 4px 0 var(--accent-color);
 }
 
 .theme-light .title-decor {
-  background-color: var(--color-h1-decorated-zone);
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--353430);
 }
 
 .theme-light .main-text {
@@ -44,18 +45,18 @@
 }
 
 .theme-light a {
-  color: var(--accent-color);
+  color: var(--353430);
   text-shadow: 2px 2px 0 var(--color-h1);
 }
 
 
 .theme-light a:focus-visible {
-  outline: solid 1px var(--accent-color);
+  outline: solid 1px var(--color-text);
 }
 
 
 .theme-light .header__theme-menu-button:focus-visible {
-  border-color: var(--accent-color);
+  border-color: var(--color-text);
 }
 
 .theme-light .header__theme-menu-button:hover {
@@ -64,14 +65,31 @@
 
 .theme-light .footer-text {
   color: var(--color-h1);
-  text-shadow: 3px 3px 0 var(--color-h1-decorated-zone);
+  text-shadow: 3px 3px 0 var(--accent-color);
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-  --accent-color: #353430;
+  --accent-color: #FF8DCB;
   --color-h1: #FFC2E6;
-  --color-h1-decorated-zone: #FF8DCB;
+  --color-text: #353430;
   --accent-color-opasity: #353430, 0.4;
+  --background-image: url(../images/cover-image-light.png);
+  }
+
+  .theme-light .title_header {
+    text-shadow: 4px 4px 0 var(--accent-color);
+  }
+
+  .title-decor {
+    background-color: var(--accent-color);
+  }
+
+  .pseudo_decorate_header::before {
+    display: none;
+  }
+  
+  .pseudo_decorate_header::after {
+    display: none;
   }
 }

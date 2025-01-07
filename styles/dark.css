@@ -14,9 +14,9 @@
   --color-h2: #000028;
   --color-main-text: #F1B2CE;
   --background-color: #000028;
-  --font-size: 18px;
   --accent-color-opasity: #ff0070, 0,4;
   --color-link: #F1B2CE;
+  --background-image: url(../images/cover-image.png);
 }
 
 .theme-dark .page {
