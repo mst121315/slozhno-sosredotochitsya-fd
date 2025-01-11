@@ -4,12 +4,16 @@
 */
 
 :root {
-  --color-h1: #DB00FF;
   --accent-color: #FF0070;
-  --color-h2: #000028;
+  --color-h1: #DB00FF;
+  --color-h2: #FF0070;
+  --color-h3: #000028;
+  --font-size: 18px;
   --color-main-text: #F1B2CE;
   --background-color: #000028;
   --font-size: 18px;
-  --accent-color-opasity: #ff0070, 0,4;
-  --background-image: url(../images/cover-image.png);
+  --background-image: url(../images/cover-image-dark.png);
+  --border-hover-color: rgba(255, 0, 112, 0.4);
+  --color-shadow-footer: #FF0070;
+  --color-decorated-zone: #FF0070;
 }
