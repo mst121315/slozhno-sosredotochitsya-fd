@@ -33,9 +33,7 @@
   display: none;
 }
 
-
-
- @media (prefers-color-scheme: light) { 
+ @media (prefers-color-scheme: light) {
   :root {
   --accent-color: #FF8DCB;
   --color-h1: #FFC2E6;
@@ -48,11 +46,11 @@
   --color-decorated-zone: #353430;
   }
 
-  .theme-auto .pseudo_decorate_header::before { 
-    display: none; 
-  } 
+  .theme-auto .pseudo_decorate_header::before {
+    display: none;
+  }
 
-  .theme-auto .pseudo_decorate_header::after { 
-    display: none; 
+  .theme-auto .pseudo_decorate_header::after {
+    display: none;
    }
-} 
+}
